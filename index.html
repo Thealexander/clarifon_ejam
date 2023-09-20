@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirección</title>
+    <script>
+        // Función para redireccionar según el ancho de la ventana
+        function redireccionar() {
+            if (window.matchMedia('(max-width: 360px)').matches) {
+                window.location.href = 'mobile.html'; // Reemplaza con la ruta de tu página móvil
+            } else {
+                window.location.href = 'desktop.html'; // Reemplaza con la ruta de tu página de escritorio
+            }
+        }
+
+        // Ejecutar la función al cargar la página
+        window.onload = redireccionar;
+    </script>
+</head>
+
+<body>
+    <!-- El contenido de esta página se mostrará solo si JavaScript está deshabilitado o la redirección no funciona -->
+</body>
+
+</html>
